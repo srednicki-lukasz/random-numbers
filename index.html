@@ -9,41 +9,51 @@
     <link rel="stylesheet" href="./style.css">
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- BOOTSTRAP JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- JS -->
     <script defer src="./app.js"></script>
 </head>
-<body class="p-2">
-    <select class="custom-select min my-2">
-        <option selected>Min</option>
-        <option value="0">0</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-    </select>
+<body class="d-flex flex-column">
+    <header>
+        <form>
+            <div class="container-fluid bg-light py-2">
+                <div class="form-row pb-1">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Minimum">
+                    </div>
 
-    <select class="custom-select max my-2">
-        <option selected>Max</option>
-        <option value="0">0</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-    </select>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Maximum">
+                    </div>
+                </div>
+    
+                <div class="form-row pt-1">
+                    <div class="col">
+                        <select class="custom-select">
+                            <option value="1">1 number</option>
+                            <option value="2">2 numbers</option>
+                            <option value="3" selected>3 numbers</option>
+                            <option value="4">4 numbers</option>
+                            <option value="5">5 numbers</option>
+                            <option value="6">6 numbers</option>
+                            <option value="7">7 numbers</option>
+                            <option value="8">8 numbers</option>
+                            <option value="9">9 numbers</option>
+                            <option value="10">10 numbers</option>
+                        </select>
+                    </div>
 
-    <select class="custom-select q my-2">
-        <option selected>How many?</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-    </select>
+                    <div class="col">
+                        <button class="btn btn-primary btn-block" title="Draw">Draw</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </header>
 
-    <button class="draw-numbers btn btn-primary my-2">Draw</button>
-
-    <p class="numbers"></p>
+    <main class="flex-fill bg-light"></main>
 </body>
 </html>
