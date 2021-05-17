@@ -19,20 +19,20 @@
 <body class="d-flex flex-column">
     <header>
         <form>
-            <div class="container-fluid bg-light py-2">
+            <div class="container-fluid bg-dark py-2">
                 <div class="form-row pb-1">
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Minimum">
+                        <input type="number" oninput="this.value=(parseInt(this.value)||0)" class="min form-control bg-light" placeholder="Minimum">
                     </div>
 
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Maximum">
+                        <input type="number" oninput="this.value=(parseInt(this.value)||0)" class="max form-control bg-light" placeholder="Maximum">
                     </div>
                 </div>
     
                 <div class="form-row pt-1">
                     <div class="col">
-                        <select class="custom-select">
+                        <select class="len custom-select bg-light">
                             <option value="1">1 number</option>
                             <option value="2">2 numbers</option>
                             <option value="3" selected>3 numbers</option>
@@ -47,13 +47,13 @@
                     </div>
 
                     <div class="col">
-                        <button class="btn btn-primary btn-block" title="Draw">Draw</button>
+                        <button type="button" class="draw btn btn-primary btn-block" title="Draw">Draw</button>
                     </div>
                 </div>
             </div>
         </form>
     </header>
 
-    <main class="flex-fill bg-light"></main>
+    <main class="flex-fill bg-dark p-3"></main>
 </body>
 </html>
