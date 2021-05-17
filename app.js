@@ -28,7 +28,7 @@ document.querySelector('.draw').addEventListener('click', () => {
     const max = document.querySelector('.max').value;
     const len = document.querySelector('.len').value;
 
-    if (min === '' || max === '') {
+    if (min === '' || max === '' || max < min) {
         alert('Invalid value for minumum or maximum');
     }
     else {
