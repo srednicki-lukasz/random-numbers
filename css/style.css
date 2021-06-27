@@ -12,14 +12,8 @@ html, body {
 
 main {
     overflow-y: scroll;
-    background-color: #000;
 }
 
 main::-webkit-scrollbar {
     display: none;
-}
-
-header {
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    z-index: 100;
 }
